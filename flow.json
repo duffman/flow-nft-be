@@ -1,0 +1,33 @@
+{
+	"emulators":   {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"networks":    {
+		"emulator": "127.0.0.1:3569",
+		"mainnet":  "access.mainnet.nodes.onflow.org:9000",
+		"testnet":  "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts":    {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"keys":    "97baf40cab6dec98315d54f7eebe0f8aa7bbf3785b36623f85a5870c11d85ddb"
+
+
+		}
+	},
+	"contracts":   {
+		"HelloWorld": "./src/cadence/contracts/HelloWorld.cdc",
+		"PinataPartyContract": "./src/cadence/contracts/PinataPartyContract.cdc"
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"HelloWorld",
+				"PinataPartyContract"
+			]
+		}
+	}
+}

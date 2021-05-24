@@ -1,0 +1,16 @@
+[ignore]
+.*/__tests__/.*
+
+[include]
+./cadence/contracts
+
+[libs]
+./custom-definitions/
+
+[lints]
+
+
+[options]
+
+[strict]
+unsafe-getters-setters
